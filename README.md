@@ -10,6 +10,8 @@ This project implements a personalized assignment recommendation system designed
 
 The goal of this system is to recommend assignments tailored to students based on their historical performance, ensuring consistent learning progression. The recommender uses a Double Deep Q-Network (DDQN) agent trained in a custom-built reinforcement learning environment, incorporating student interaction history and problem metadata such as difficulty and topic tags.
 
+![RL Framework](https://github.com/user-attachments/assets/00f53624-28a5-47e7-886f-0879fb322ac2)
+
 ---
 
 ## Key Features
@@ -48,6 +50,8 @@ Each student’s learning state is dynamically represented using a graph-based k
   Applies an attention mechanism to emphasize relevant past interactions.
 
 These components are combined into a high-dimensional vector summarizing the student’s knowledge state and learning trajectory.
+
+![dkt](https://github.com/user-attachments/assets/fafeaac0-d2ae-43ca-b2d7-0281bb245105)
 
 ---
 
