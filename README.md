@@ -1,6 +1,6 @@
-# Personalized Assignment Recommendation System using Deep Reinforcement Learning
+# Personalized Exercise Recommendation System using Deep Reinforcement Learning
 
-This project implements a personalized assignment recommendation system designed to adapt to each student's evolving learning needs. By leveraging reinforcement learning and knowledge tracing, the system aims to provide programming problem suggestions that are both challenging and pedagogically sound.
+This project implements a personalized programming exercises recommendation system designed to adapt to each student's evolving learning needs. By leveraging reinforcement learning and knowledge tracing, the system aims to provide programming problem suggestions that are both challenging and pedagogically sound.
 
 
 
@@ -8,7 +8,7 @@ This project implements a personalized assignment recommendation system designed
 
 ## Overview
 
-The goal of this system is to recommend assignments tailored to students based on their historical performance, ensuring consistent learning progression. The recommender uses a Double Deep Q-Network (DDQN) agent trained in a custom-built reinforcement learning environment, incorporating student interaction history and problem metadata such as difficulty and topic tags.
+The goal of this system is to recommend exercises tailored to students based on their historical performance, ensuring consistent learning progression. The recommender uses a Double Deep Q-Network (DDQN) agent trained in a custom-built reinforcement learning environment, incorporating student interaction history and problem metadata such as difficulty and topic tags.
 
 ![RL Framework](https://github.com/user-attachments/assets/00f53624-28a5-47e7-886f-0879fb322ac2)
 
@@ -72,9 +72,9 @@ The reward function encourages effective learning through:
 
 **Overall Reward**  
 A weighted sum of the above components:
-$$
-r = \beta_1 r_1 + \beta_2 r_2 + \beta_3 r_3
-$$
+```
+r = β₁r₁ + β₂r₂ + β₃r₃
+```
 
 Where the weights can be tuned to prioritize different aspects of learning.
 
@@ -85,7 +85,7 @@ Where the weights can be tuned to prioritize different aspects of learning.
 The DDQN agent:
 
 - Observes the student's current knowledge state.
-- Selects the next assignment to recommend.
+- Selects the next exercises to recommend.
 - Receives reward feedback from the environment.
 - Learns using:
   - A **policy network** for action selection.
